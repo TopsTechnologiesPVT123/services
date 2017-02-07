@@ -1,0 +1,6 @@
+D:\ServiceOrientedApplication\ServiceOrientedApplication\bin\ServiceOrientedApplication.dll.config
+D:\ServiceOrientedApplication\ServiceOrientedApplication\bin\ServiceOrientedApplication.dll
+D:\ServiceOrientedApplication\ServiceOrientedApplication\bin\ServiceOrientedApplication.pdb
+D:\ServiceOrientedApplication\ServiceOrientedApplication\obj\Debug\ServiceOrientedApplication.csprojResolveAssemblyReference.cache
+D:\ServiceOrientedApplication\ServiceOrientedApplication\obj\Debug\ServiceOrientedApplication.dll
+D:\ServiceOrientedApplication\ServiceOrientedApplication\obj\Debug\ServiceOrientedApplication.pdb
