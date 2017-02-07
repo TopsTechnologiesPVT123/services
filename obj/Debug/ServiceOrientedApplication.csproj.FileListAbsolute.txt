@@ -4,3 +4,9 @@ D:\ServiceOrientedApplication\ServiceOrientedApplication\bin\ServiceOrientedAppl
 D:\ServiceOrientedApplication\ServiceOrientedApplication\obj\Debug\ServiceOrientedApplication.csprojResolveAssemblyReference.cache
 D:\ServiceOrientedApplication\ServiceOrientedApplication\obj\Debug\ServiceOrientedApplication.dll
 D:\ServiceOrientedApplication\ServiceOrientedApplication\obj\Debug\ServiceOrientedApplication.pdb
+D:\bhadresh\hosted\bhadresh\newhosted\bin\ServiceOrientedApplication.dll.config
+D:\bhadresh\hosted\bhadresh\newhosted\bin\ServiceOrientedApplication.dll
+D:\bhadresh\hosted\bhadresh\newhosted\bin\ServiceOrientedApplication.pdb
+D:\bhadresh\hosted\bhadresh\newhosted\obj\Debug\ServiceOrientedApplication.csprojResolveAssemblyReference.cache
+D:\bhadresh\hosted\bhadresh\newhosted\obj\Debug\ServiceOrientedApplication.dll
+D:\bhadresh\hosted\bhadresh\newhosted\obj\Debug\ServiceOrientedApplication.pdb

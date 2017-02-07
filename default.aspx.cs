@@ -1,17 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.Script.Serialization;
 using System.Web.Services;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Configuration;
 
 
 namespace ServiceOrientedApplication
 {
     public partial class _default : System.Web.UI.Page
     {
+        static SqlConnection con = new SqlConnection();
+        static SqlCommand cmd = new SqlCommand();
+        static SqlDataAdapter adp = new SqlDataAdapter();
+        static DataTable dt = new DataTable();
+
+        public static void estcon()
+        {
+            con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbf10604b239fd44829764a713006c26ddConnectionString"].ConnectionString);
+
+        }
+
         public class person
         {
             public int age;
@@ -69,10 +83,15 @@ namespace ServiceOrientedApplication
 
             responseClass res = new responseClass();
 
-            if (uname == "a" && password == "123")
+            estcon();
+            adp = new SqlDataAdapter("Select * from tbllogin where username = @unm and password = @psw ", con);
+            dt = new DataTable();
+            adp.Fill(dt);
+
+            if (dt.Rows.Count == 1)
             {
 
-                res.status= "1";
+                res.status = "1";
                 res.message = "done";
 
 
@@ -89,12 +108,13 @@ namespace ServiceOrientedApplication
             return TheJson;
         }
 
-        public class responseClass {
+        public class responseClass
+        {
             public string status { get; set; }
             public string message { get; set; }
         }
 
 
-        
+
     }
 }
