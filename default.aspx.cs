@@ -85,6 +85,8 @@ namespace ServiceOrientedApplication
 
             estcon();
             adp = new SqlDataAdapter("Select * from tbllogin where username = @unm and password = @psw ", con);
+            adp.SelectCommand.Parameters.AddWithValue("@unm",uname);
+            adp.SelectCommand.Parameters.AddWithValue("@psw", password);
             dt = new DataTable();
             adp.Fill(dt);
 
@@ -92,15 +94,15 @@ namespace ServiceOrientedApplication
             {
 
                 res.status = "1";
-                res.message = "done";
+                res.message = dt.Rows[0]["loginid"].ToString();
 
 
 
             }
             else
             {
-                res.status = "-1";
-                res.message = "err";
+                res.status = "0";
+                res.message = "not done!";
             }
             var data = res;
 

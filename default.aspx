@@ -15,7 +15,7 @@
                     $.ajax({
                         type: "POST",
                         url: "default.aspx/login",
-                        data: JSON.stringify({ "uname": "a", "password": "123" }),
+                        data: JSON.stringify({ "uname": "bhadresh", "password": "bhadresh" }),
                         contentType: "application/json; charset=utf-8",
                         dataType: "json",
                         success: function (data) { alert(data.d); },
